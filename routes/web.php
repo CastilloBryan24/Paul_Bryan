@@ -36,3 +36,6 @@ Route::post("/home1-store", [HomeController::class, "store"]);
 Route::post("/home2-store", [HomeController::class, "add"]);
 Route::post("/nav-store", [HomeController::class, "ajouter"]);
 Route::post("/network-store", [HomeController::class, "box"]);
+
+Route::post("/delete-home1/{id}", [HomeController::class, "destroy"]);
+Route::post("/delete-home1/{id}", [HomeController::class, "destroy"]);

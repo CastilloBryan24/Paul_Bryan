@@ -6,6 +6,7 @@
       <tr>
         <th scope="col">Icone</th>
         <th scope="col">Paragraphe</th>
+        <th scope="col">Supprimer</th>
       </tr>
     </thead>
     <tbody>
@@ -13,6 +14,15 @@
       <tr>
         <td>{{$item ->icone}}</td>
         <td>{{$item ->paragraph}}</td>
+        <td>
+          <form action="" method="post"></form>
+        </td>
+        <td>
+          <form action="/delete-home1/{{$item->id}}" method="POST">
+            @csrf
+            <button type="submit" class="btn btn-danger">Supprimer</button>
+          </form>
+        </td>
       </tr>
       @endforeach
     </tbody>
