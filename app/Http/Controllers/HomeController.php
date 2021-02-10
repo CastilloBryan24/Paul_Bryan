@@ -86,4 +86,11 @@ class HomeController extends Controller
         $destroy->delete();
         return redirect()->back();
     }
+
+    public function supprimer($id)
+    {
+        $destroy = HomeLi2::find($id);
+        $destroy->delete();
+        return redirect()->back();
+    }
 }
