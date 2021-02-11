@@ -4,25 +4,22 @@
 <table class="table table-bordered table-dark container mt-5">
     <thead>
       <tr>
-        <th scope="col">Icone</th>
         <th scope="col">Paragraphe</th>
         <th scope="col">Supprimer</th>
+        <th scope="col">Show</th>
       </tr>
     </thead>
     <tbody>
       @foreach ($home1 as $item)
       <tr>
-        <td>{{$item ->icone}}</td>
         <td>{{$item ->paragraph}}</td>
-        <td>
-          <form action="" method="post"></form>
-        </td>
         <td>
           <form action="/delete-home1/{{$item->id}}" method="POST">
             @csrf
             <button type="submit" class="btn btn-danger">Supprimer</button>
           </form>
         </td>
+        <td><a href="/homeLi-show/{{$item->id}}" class="btn btn-danger">Show</a></td>
       </tr>
       @endforeach
     </tbody>

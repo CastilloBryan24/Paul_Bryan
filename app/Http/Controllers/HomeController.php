@@ -98,5 +98,16 @@ class HomeController extends Controller
         $destroy = Network::find($id);
         $destroy->delete();
         return redirect()->back();
+    public function supprimer($id)
+    {
+        $destroy = HomeLi2::find($id);
+        $destroy->delete();
+        return redirect()->back();
+    }
+
+    public function show($id)
+    {
+        $show = HomeLi::find($id);
+        return view("show", compact("show"));
     }
 }
