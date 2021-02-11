@@ -9,23 +9,13 @@
 
 </head>
 <body>
-    
-    <table class="table table-bordered table-dark container mt-5">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Icone</th>
-            <th scope="col">Text</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">{{$show->id}}</th>
-            <td>{{$show->icone}}</td>
-            <td>{{$show->paragraph}}</td>
-          </tr>
-        </tbody>
-      </table>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{$show->icone}}</h5>
+          <p class="card-text">{{$show->paragraph}}</p>
+        </div>
+      </div>
     
     <script src="{{asset("js/app.js")}}"></script>
 </body>
