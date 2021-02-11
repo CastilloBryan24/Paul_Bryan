@@ -93,4 +93,10 @@ class HomeController extends Controller
         $destroy->delete();
         return redirect()->back();
     }
+
+    public function show($id)
+    {
+        $show = HomeLi::find($id);
+        return view("show", compact("show"));
+    }
 }

@@ -30,6 +30,7 @@ Route::get("/boArticle", [ArticleController::class, "boArticle"]);
 Route::get("/boHome1", [HomeController::class, "boHome1"]);
 Route::get("/boHome2", [HomeController::class, "boHome2"]);
 Route::get("/boNav", [HomeController::class, "boNav"]);
+Route::get("/homeLi-show/{id}", [HomeController::class, "show"]);
 
 Route::post("/article-store", [ArticleController::class, "store"]);
 Route::post("/home1-store", [HomeController::class, "store"]);
