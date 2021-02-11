@@ -39,3 +39,7 @@ Route::post("/network-store", [HomeController::class, "box"]);
 
 Route::post("/delete-home1/{id}", [HomeController::class, "destroy"]);
 Route::post("/delete-home1/{id}", [HomeController::class, "destroy"]);
+
+Route::post("/delete-article/{id}", [ArticleController::class, "destroy"]);
+Route::post("/delete-nav/{id}", [HomeController::class, "destroyed"]);
+Route::post("/delete-network/{id}", [HomeController::class, "anihylation"]);

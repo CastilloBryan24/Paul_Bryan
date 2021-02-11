@@ -11,6 +11,12 @@
         @foreach ($network as $item)
         <tr>
             <td>{{$item ->lien}}</td>
+            <td>
+        <form action="/delete-network/{{$item->id}}" method="post">
+            @csrf
+            <button type="submit" class="btn btn-danger">Supprimer</button>
+          </form>
+        </td>
         </tr>
         @endforeach
         </tbody>

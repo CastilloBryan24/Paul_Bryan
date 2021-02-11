@@ -86,4 +86,17 @@ class HomeController extends Controller
         $destroy->delete();
         return redirect()->back();
     }
+
+    public function destroyed($id)
+    {
+        $destroy = Nav2::find($id);
+        $destroy->delete();
+        return redirect()->back();
+    }
+    public function anihylation($id)
+    {
+        $destroy = Network::find($id);
+        $destroy->delete();
+        return redirect()->back();
+    }
 }

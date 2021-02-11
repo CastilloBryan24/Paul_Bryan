@@ -17,6 +17,12 @@
         <td>{{$item ->number}}</td>
         <td>{{$item ->subtitle}}</td>
         <td>{{$item ->paragraph}}</td>
+        <td>
+        <form action="/delete-article/{{$item->id}}" method="post">
+            @csrf
+            <button type="submit" class="btn btn-danger">Supprimer</button>
+          </form>
+        </td>
       </tr>
       @endforeach
     </tbody>

@@ -13,6 +13,12 @@
         <tr>
             <td>{{$item ->lien}}</td>
             <td>{{$item ->route}}</td>
+            <td>
+        <form action="/delete-nav/{{$item->id}}" method="post">
+            @csrf
+            <button type="submit" class="btn btn-danger">Supprimer</button>
+          </form>
+        </td>
         </tr>
         @endforeach
         </tbody>
