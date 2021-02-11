@@ -12,7 +12,9 @@
 
       <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">{{$show->icone}}</h5>
+          <h5 class="card-title">{{$show->icone}} {{$show->title}}</h5>
+          <p class="card-text">{{$show->paragraph}} {{$show->number}}</p>
+          <p class="card-text">{{$show->subtitle}}</p>
           <p class="card-text">{{$show->paragraph}}</p>
         </div>
       </div>
