@@ -14,7 +14,7 @@
         <div class="card-body">
           <h5 class="card-title">{{$show->icone}}</h5>
           <p class="card-text">{{$show->paragraph}}</p>
-          <a href="/edit-home1/{{$show->id}}" class="btn btn-success">Edit</a>
+          <a href="/edit-home2/{{$show->id}}" class="btn btn-success">Edit</a>
         </div>
       </div>
     

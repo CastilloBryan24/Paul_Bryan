@@ -7,6 +7,7 @@
         <th scope="col">Icone</th>
         <th scope="col">Paragraphe</th>
         <th scope="col">Supprimer</th>
+        <th scope="col">Show</th>
       </tr>
     </thead>
     <tbody>
@@ -20,6 +21,7 @@
             <button type="submit" class="btn btn-danger">Supprimer</button>
           </form>
         </td>
+        <td><a href="/homeLi2-show/{{$item->id}}" class="btn btn-success">Show</a></td>
       </tr>
       @endforeach
     </tbody>

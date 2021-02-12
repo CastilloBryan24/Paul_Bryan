@@ -31,6 +31,12 @@ Route::get("/boHome1", [HomeController::class, "boHome1"]);
 Route::get("/boHome2", [HomeController::class, "boHome2"]);
 Route::get("/boNav", [HomeController::class, "boNav"]);
 Route::get("/homeLi-show/{id}", [HomeController::class, "show"]);
+Route::get("/homeLi2-show/{id}", [HomeController::class, "show2"]);
+Route::get("/edit-home1/{id}", [HomeController::class, "edit"]);
+Route::get("/edit-home2/{id}", [HomeController::class, "modif"]);
+
+Route::post("/update-home1/{id}", [HomeController::class, "update"]);
+Route::post("/update-home2/{id}", [HomeController::class, "maj"]);
 
 Route::post("/article-store", [ArticleController::class, "store"]);
 Route::post("/home1-store", [HomeController::class, "store"]);

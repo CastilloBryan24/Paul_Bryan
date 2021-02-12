@@ -112,4 +112,40 @@ class HomeController extends Controller
         $show = HomeLi::find($id);
         return view("show", compact("show"));
     }
+
+    public function show2($id)
+    {
+        $show = HomeLi2::find($id);
+        return view("showHome2", compact("show"));
+    }
+
+    public function edit($id)
+    {
+        $edit = HomeLi::find($id);
+        return view("edit", compact("edit"));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $update = HomeLi::find($id);
+        $update->icone = $request->icone;
+        $update->paragraph = $request->paragraph;
+        $update->save();
+        return redirect("/");
+    }
+
+    public function modif($id)
+    {
+        $edit = HomeLi2::find($id);
+        return view("editHomeLi2", compact("edit"));
+    }
+
+    public function maj(Request $request, $id)
+    {
+        $update = HomeLi2::find($id);
+        $update->icone = $request->icone;
+        $update->paragraph = $request->paragraph;
+        $update->save();
+        return redirect("/");
+    }
 }
