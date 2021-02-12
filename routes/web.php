@@ -37,6 +37,7 @@ Route::get("/edit-home2/{id}", [HomeController::class, "modif"]);
 
 Route::post("/update-home1/{id}", [HomeController::class, "update"]);
 Route::post("/update-home2/{id}", [HomeController::class, "maj"]);
+Route::get("/article-show/{id}", [ArticleController::class, "show"]);
 
 Route::post("/article-store", [ArticleController::class, "store"]);
 Route::post("/home1-store", [HomeController::class, "store"]);

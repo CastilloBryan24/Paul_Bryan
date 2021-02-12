@@ -22,6 +22,7 @@
             @csrf
             <button type="submit" class="btn btn-danger">Supprimer</button>
           </form>
+          <td><a href="/article-show/{{$item->id}}" class="btn btn-danger">Show</a></td>
         </td>
       </tr>
       @endforeach
